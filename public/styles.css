@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.banner{
+  background-color: rgb(241 242 242);
+}
+
+.bannerContent{
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+width: 40em;
+}
+
+.title{
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+h1{
+  font-weight: 100;
+  font-size: 2px;
+  color:rgb(224 235 207);
+}
+
+h3{
+  margin-top: 40px;
+  color:rgb(224 235 207);
+}
+form{
+  display: block;
+  align-items: center;
+}
+
+.herbs{
+  list-style: none;
+}
+
+.orderItems{
+  display: block;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgb(224 235 207);
+  margin: 2em 2em;
+}
+
+.button{
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.herbName{
+  display:inline-block;
+  text-align: center;
+}
+
+.herbProp{
+  padding: 1em 1em;
+  text-decoration: underline;
+  display: block;
+  align-items: center;
+
+}
+
+.herbPos{
+  display: block;
+  align-items: center;
+  color:rgb(224 235 207);
+  padding: 1em 1em;
+
+
+}
+
+button{
+  background-color:rgb(224 235 207);
+  height:4em;
+  width: 20em;
+  border:none;
+  text-transform: uppercase;
+  
+
+}
+
+.hide{
+  display:none;
+}
