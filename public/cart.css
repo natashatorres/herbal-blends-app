@@ -62,12 +62,16 @@ h3{
   display:none;
 }
 
-button{
+.btn{
   background-color:rgb(224 235 207);
   height:4em;
   width: 20em;
   border:none;
+  padding:1em 5em;
+  color:black;
   text-transform: uppercase;
+  text-decoration: none;
   
 
 }
+

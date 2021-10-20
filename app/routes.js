@@ -1,7 +1,10 @@
 module.exports = function (app, passport, db, ObjectId) {
 
   // normal routes ===============================================================
-
+  app.get('/confirmation', function (req, res) {
+    req.logout();
+    res.render('confirmation.ejs');
+  });
   // show the home page (will also have our login links)
   app.get('/', (req, res) => {
 
@@ -24,6 +27,7 @@ module.exports = function (app, passport, db, ObjectId) {
       res.render('cart.ejs', { cart: result })
     })
   })
+
 
   // PROFILE SECTION =========================
   app.get('/profile', isLoggedIn, function (req, res) {
@@ -80,6 +84,7 @@ module.exports = function (app, passport, db, ObjectId) {
   })
 
 
+
   app.delete('/cart', (req, res) => {
     console.log(req.body.id, req.body.id === "616e19334e665fc02b002cbc", typeof req.body.id)
     db.collection('cart').findOneAndDelete({
@@ -121,6 +126,8 @@ module.exports = function (app, passport, db, ObjectId) {
     failureRedirect: '/signup', // redirect back to the signup page if there is an error
     failureFlash: true // allow flash messages
   }));
+
+  
 
   // =============================================================================
   // UNLINK ACCOUNTS =============================================================

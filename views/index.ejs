@@ -20,14 +20,24 @@
       <img src="banner.png">
     </div>
   </div>
- 
+
   <section class="title">
-  <h1>Choose one herb from each category:</h1>
+    <h1>Choose one herb from each category:</h1>
   </section>
 
 
 
   <form action="/cart" method="POST">
+
+    <div class="signinContainer">
+      <div class="signIn">
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+      </div>
+    </div>
+    
     <section class="orderItems">
 
       <ul class="herbs">
@@ -60,22 +70,22 @@
     </section>
 
 
-        <section class="orderItems">
-          <ul class="herbs">
-            <% for(var i=0; i<flavor.length; i++) {%>
-              <li class="herb">
-                <span class="herbName">
-                  <%= flavor[i].name %>
-                </span>
-                <input type="radio" id="<%= flavor[i].name%>" name="flavor" value="<%= flavor[i].name%>">
+    <section class="orderItems">
+      <ul class="herbs">
+        <% for(var i=0; i<flavor.length; i++) {%>
+          <li class="herb">
+            <span class="herbName">
+              <%= flavor[i].name %>
+            </span>
+            <input type="radio" id="<%= flavor[i].name%>" name="flavor" value="<%= flavor[i].name%>">
 
-                <span class="herbProp">
-                  <%= flavor[i].medicinalProp %>
-                </span>
-                <span class="herbPos">
-                  <%= flavor[i].component %>
-                </span>
-                <!-- <span><%= flavor[i].liked %></span>
+            <span class="herbProp">
+              <%= flavor[i].medicinalProp %>
+            </span>
+            <span class="herbPos">
+              <%= flavor[i].component %>
+            </span>
+            <!-- <span><%= flavor[i].liked %></span>
         <span><i class="fas fa-heart" aria-hidden="true"></i></span> 
         <span><i class="far fa-heart" aria-hidden="true"></i></span>
 
@@ -85,29 +95,29 @@
           <span><i class="far fa-heart liked" aria-hidden="true"></i></span> 
           <%}%> -->
 
-              </li>
-              <% } %>
-          </ul>
+          </li>
+          <% } %>
+      </ul>
 
-        </section>
+    </section>
 
-        <section class="orderItems">
+    <section class="orderItems">
 
-          <ul class="herbs">
-            <% for(var i=0; i<support.length; i++) {%>
-              <li class="herb">
-                <span class="herbName">
-                  <%= support[i].name %>
-                </span>
-                <input type="radio" id="<%= support[i].name%>" name="support" value="<%= support[i].name%>">
+      <ul class="herbs">
+        <% for(var i=0; i<support.length; i++) {%>
+          <li class="herb">
+            <span class="herbName">
+              <%= support[i].name %>
+            </span>
+            <input type="radio" id="<%= support[i].name%>" name="support" value="<%= support[i].name%>">
 
-                <span class="herbProp">
-                  <%= support[i].medicinalProp %>
-                </span>
-                <span class="herbPos">
-                  <%= support[i].component %>
-                </span>
-                <!-- <span><%= support[i].liked %></span>
+            <span class="herbProp">
+              <%= support[i].medicinalProp %>
+            </span>
+            <span class="herbPos">
+              <%= support[i].component %>
+            </span>
+            <!-- <span><%= support[i].liked %></span>
         <span><i class="fas fa-heart" aria-hidden="true"></i></span> 
         <span><i class="far fa-heart" aria-hidden="true"></i></span>
 
@@ -116,22 +126,17 @@
           <%} else {%>
           <span><i class="far fa-heart liked" aria-hidden="true"></i></span> 
           <%}%> -->
-              </li>
-              <% } %>
-          </ul>
-        </section>
+          </li>
+          <% } %>
+      </ul>
+    </section>
 
-        <section class="button">
-          <button type="submit">ENTER</button>
-        </section>
-
-        <p>Login or Signup:</p>
-
-<a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-<a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+    <section class="button">
+      <button type="submit">ENTER</button>
+    </section>
 
   </form>
-  
+
 
 
 
