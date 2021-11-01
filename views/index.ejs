@@ -15,29 +15,32 @@
 </head>
 
 <body>
+ 
   <div class="banner">
+    <div class="signIn">
+      <span>Please log-in or sign-up to order:</span>
+      <a href="/login" class="btn btn-default" required>Login</a>
+      <a href="/signup" class="btn btn-default">Signup</a>
+  
+    </div>
     <div class="bannerContent">
       <img src="banner.png">
     </div>
+    
   </div>
 
-  <section class="title">
-    <h1>Choose one herb from each category:</h1>
-  </section>
+
 
 
 
   <form action="/cart" method="POST">
 
     <div class="signinContainer">
-      <div class="signIn">
-        <span>Please log-in or sign-up to order:</span>
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
-
-      </div>
+     
     </div>
-    
+    <section class="title">
+      <h1>Choose one herb from each category:</h1>
+    </section>
     <section class="orderItems">
 
       <ul class="herbs">

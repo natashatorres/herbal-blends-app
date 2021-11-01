@@ -18,7 +18,7 @@ body{
 }
 
 img{
-width: 40em;
+width: 60em;
 }
 
 .title{
@@ -56,9 +56,11 @@ form{
   display: block;
   align-items: center;
   text-align: center;
-
+  width: 40em;
   border: 1px solid rgb(224 235 207);
-  margin: 2em 2em;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .button{
